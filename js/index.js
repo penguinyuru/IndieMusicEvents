@@ -18,8 +18,8 @@ $.ajax({
       itemEl.click(function(){
         var selectedId = $(this).attr("data-id")
         console.log(selectedId)
-        updateSelect(selectedId)
         $("#item").addClass("selectItem")
+        updateSelect(selectedId)
         $(".selectItemBox").show()
     })
     $(".row#eventItems").append(itemEl)
